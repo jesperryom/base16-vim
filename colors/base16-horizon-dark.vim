@@ -21,10 +21,10 @@ let s:gui01        = "232530"
 let g:base16_gui01 = "232530"
 let s:gui02        = "2E303E"
 let g:base16_gui02 = "2E303E"
-let s:gui03        = "676A8D"
-let g:base16_gui03 = "676A8D"
-let s:gui04        = "CED1D0"
-let g:base16_gui04 = "CED1D0"
+let s:gui03        = "6F6F70"
+let g:base16_gui03 = "6F6F70"
+let s:gui04        = "9DA0A2"
+let g:base16_gui04 = "9DA0A2"
 let s:gui05        = "CBCED0"
 let g:base16_gui05 = "CBCED0"
 let s:gui06        = "DCDFE4"
@@ -107,7 +107,7 @@ if has("nvim")
   let g:terminal_color_5 =  "#B072D1"
   let g:terminal_color_6 =  "#24A8B4"
   let g:terminal_color_7 =  "#CBCED0"
-  let g:terminal_color_8 =  "#676A8D"
+  let g:terminal_color_8 =  "#6F6F70"
   let g:terminal_color_9 =  "#E93C58"
   let g:terminal_color_10 = "#EFAF8E"
   let g:terminal_color_11 = "#EFB993"
@@ -131,7 +131,7 @@ elseif has("terminal")
         \ "#B072D1",
         \ "#24A8B4",
         \ "#CBCED0",
-        \ "#676A8D",
+        \ "#6F6F70",
         \ "#E93C58",
         \ "#EFAF8E",
         \ "#EFB993",
@@ -183,13 +183,13 @@ call <sid>hi("Normal",        s:gui05, s:gui00, s:cterm05, s:cterm00, "", "")
 call <sid>hi("Bold",          "", "", "", "", "bold", "")
 call <sid>hi("Debug",         s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("Directory",     s:gui0D, "", s:cterm0D, "", "", "")
-call <sid>hi("Error",         s:gui00, s:gui08, s:cterm00, s:cterm08, "", "")
+call <sid>hi("Error",         "none", "none", "none", "none", "none", "none")
 call <sid>hi("ErrorMsg",      s:gui08, s:gui00, s:cterm08, s:cterm00, "", "")
 call <sid>hi("Exception",     s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("FoldColumn",    s:gui0C, s:gui01, s:cterm0C, s:cterm01, "", "")
 call <sid>hi("Folded",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
 call <sid>hi("IncSearch",     s:gui01, s:gui09, s:cterm01, s:cterm09, "none", "")
-call <sid>hi("Italic",        "", "", "", "", "none", "")
+call <sid>hi("Italic",        "", "", "", "", "italic", "")
 call <sid>hi("Macro",         s:gui08, "", s:cterm08, "", "", "")
 call <sid>hi("MatchParen",    "", s:gui03, "", s:cterm03,  "", "")
 call <sid>hi("ModeMsg",       s:gui0B, "", s:cterm0B, "", "", "")
@@ -227,7 +227,7 @@ call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", ""
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Character",    s:gui08, "", s:cterm08, "", "", "")
-call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "", "")
+call <sid>hi("Comment",      s:gui03, "", s:cterm03, "", "italic", "")
 call <sid>hi("Conditional",  s:gui0E, "", s:cterm0E, "", "", "")
 call <sid>hi("Constant",     s:gui09, "", s:cterm09, "", "", "")
 call <sid>hi("Define",       s:gui0E, "", s:cterm0E, "", "none", "")
@@ -405,8 +405,52 @@ call <sid>hi("StartifySpecial",  s:gui03, "", s:cterm03, "", "", "")
 " Java highlighting
 call <sid>hi("javaOperator",     s:gui0D, "", s:cterm0D, "", "", "")
 
+" Ale
+call <sid>hi("ALEErrorSign",     			s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
+call <sid>hi("ALEWarningSign",   			s:gui0A, s:gui01, s:cterm0A, s:cterm01, "", "")
+call <sid>hi("ALEVirtualTextError",		s:gui08, "", s:cterm08, "", "italic", "")
+call <sid>hi("ALEVirtualTextStyleError", s:gui08, "", s:cterm08, "", "italic", "")
+call <sid>hi("ALEVirtualTextWarning",	s:gui0A, "", s:cterm0A, "", "italic", "")
+call <sid>hi("ALEVirtualTextStyleWarning", s:gui0A, "", s:cterm0A, "", "italic", "")
+call <sid>hi("ALEVirtualTextInfo", 		s:gui0D, "", s:cterm0D, "", "italic", "")
+
+" coc
+call <sid>hi("CocErrorHighlight", s:gui08, "", s:cterm08, "", "undercurl", "")
+call <sid>hi("CocWarningHighlight", s:gui0A, "", s:cterm0A, "", "undercurl", "")
+call <sid>hi("CocInfoHighlight", s:gui0D, "", s:cterm0D, "", "undercurl", "")
+call <sid>hi("CocHintHighlight", s:gui0D, "", s:cterm0D, "", "undercurl", "")
+
+call <sid>hi("CocErrorSign", s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
+call <sid>hi("CocWarningSign", s:gui0A, s:gui01, s:cterm0A, s:cterm01, "", "")
+call <sid>hi("CocInfoSign", s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+call <sid>hi("CocHintSign", s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+
+call <sid>hi("CocErrorVirtualText",		s:gui08, "", s:cterm08, "", "italic", "")
+call <sid>hi("CocWarningVirtualText",	s:gui0A, "", s:cterm0A, "", "italic", "")
+call <sid>hi("CocInfoVirtualText",	s:gui0D, "", s:cterm0D, "", "italic", "")
+call <sid>hi("CocHintVirtualText", 		s:gui0D, "", s:cterm0D, "", "italic", "")
+
+call <sid>hi("HighlightedyankRegion", s:gui00, s:gui0A, s:cterm00, s:cterm0A, "", "")
+
+call <sid>hi("DiffAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
+call <sid>hi("DiffChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+call <sid>hi("DiffDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
+call <sid>hi("DiffChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "", "")
+
 " Remove functions
 delf <sid>hi
+
+" JSX tag colors
+hi link xmlEndTag xmlTag
+
+" Fzf
+let g:fzf_colors =  {'fg':['fg','Normal'],'bg':['bg','Normal'],
+  \ 'hl':['fg','Comment'],'fg+':['fg','CursorLine','CursorColumn','Normal'],
+  \ 'bg+':['bg', 'CursorLine','CursorColumn'],
+  \ 'hl+':['fg','Statement'],'info':['fg','PreProc'],
+  \ 'border':['fg','Ignore'],'prompt':['fg','Conditional'],
+  \ 'pointer':['fg','Exception'],'marker':['fg','Keyword'],
+  \ 'spinner': ['fg', 'Label'],'header':['fg', 'Comment'] }
 
 " Remove color variables
 unlet s:gui00 s:gui01 s:gui02 s:gui03  s:gui04  s:gui05  s:gui06  s:gui07  s:gui08  s:gui09 s:gui0A  s:gui0B  s:gui0C  s:gui0D  s:gui0E  s:gui0F
