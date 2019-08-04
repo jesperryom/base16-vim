@@ -405,6 +405,15 @@ call <sid>hi("StartifySpecial",  s:gui03, "", s:cterm03, "", "", "")
 " Java highlighting
 call <sid>hi("javaOperator",     s:gui0D, "", s:cterm0D, "", "", "")
 
+" Ale
+call <sid>hi("ALEErrorSign",     			s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
+call <sid>hi("ALEWarningSign",   			s:gui0A, s:gui01, s:cterm0A, s:cterm01, "", "")
+call <sid>hi("ALEVirtualTextError",		s:gui08, "", s:cterm08, "", "italic", "")
+call <sid>hi("ALEVirtualTextStyleError", s:gui08, "", s:cterm08, "", "italic", "")
+call <sid>hi("ALEVirtualTextWarning",	s:gui0A, "", s:cterm0A, "", "italic", "")
+call <sid>hi("ALEVirtualTextStyleWarning", s:gui0A, "", s:cterm0A, "", "italic", "")
+call <sid>hi("ALEVirtualTextInfo", 		s:gui0D, "", s:cterm0D, "", "italic", "")
+
 " Remove functions
 delf <sid>hi
 
