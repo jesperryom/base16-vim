@@ -414,6 +414,29 @@ call <sid>hi("ALEVirtualTextWarning",	s:gui0A, "", s:cterm0A, "", "italic", "")
 call <sid>hi("ALEVirtualTextStyleWarning", s:gui0A, "", s:cterm0A, "", "italic", "")
 call <sid>hi("ALEVirtualTextInfo", 		s:gui0D, "", s:cterm0D, "", "italic", "")
 
+" coc
+call <sid>hi("CocErrorHighlight", s:gui08, "", s:cterm08, "", "undercurl", "")
+call <sid>hi("CocWarningHighlight", s:gui0A, "", s:cterm0A, "", "undercurl", "")
+call <sid>hi("CocInfoHighlight", s:gui0D, "", s:cterm0D, "", "undercurl", "")
+call <sid>hi("CocHintHighlight", s:gui0D, "", s:cterm0D, "", "undercurl", "")
+
+call <sid>hi("CocErrorSign", s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
+call <sid>hi("CocWarningSign", s:gui0A, s:gui01, s:cterm0A, s:cterm01, "", "")
+call <sid>hi("CocInfoSign", s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+call <sid>hi("CocHintSign", s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+
+call <sid>hi("CocErrorVirtualText",		s:gui08, "", s:cterm08, "", "italic", "")
+call <sid>hi("CocWarningVirtualText",	s:gui0A, "", s:cterm0A, "", "italic", "")
+call <sid>hi("CocInfoVirtualText",	s:gui0D, "", s:cterm0D, "", "italic", "")
+call <sid>hi("CocHintVirtualText", 		s:gui0D, "", s:cterm0D, "", "italic", "")
+
+call <sid>hi("HighlightedyankRegion", s:gui00, s:gui0A, s:cterm00, s:cterm0A, "", "")
+
+call <sid>hi("DiffAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
+call <sid>hi("DiffChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+call <sid>hi("DiffDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
+call <sid>hi("DiffChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "", "")
+
 " Remove functions
 delf <sid>hi
 
