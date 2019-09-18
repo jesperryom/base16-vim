@@ -19,8 +19,8 @@ let s:gui00        = "202126"
 let g:base16_gui00 = "202126"
 let s:gui01        = "2d303d"
 let g:base16_gui01 = "2d303d"
-let s:gui02        = "706d60"
-let g:base16_gui02 = "706d60"
+let s:gui02        = "5a576e"
+let g:base16_gui02 = "5a576e"
 let s:gui03        = "a1d2e6"
 let g:base16_gui03 = "a1d2e6"
 let s:gui04        = "cad3ff"
@@ -208,11 +208,11 @@ call <sid>hi("Title",         s:gui0D, "", s:cterm0D, "", "none", "")
 call <sid>hi("Conceal",       s:gui0D, s:gui00, s:cterm0D, s:cterm00, "", "")
 call <sid>hi("Cursor",        s:gui00, s:gui05, s:cterm00, s:cterm05, "", "")
 call <sid>hi("NonText",       s:gui03, "", s:cterm03, "", "", "")
-call <sid>hi("LineNr",        s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
-call <sid>hi("SignColumn",    s:gui03, s:gui01, s:cterm03, s:cterm01, "", "")
+call <sid>hi("LineNr",        s:gui03, "none", s:cterm03, "none", "", "")
+call <sid>hi("SignColumn",    s:gui03, "none", s:cterm03, "none", "", "")
 call <sid>hi("StatusLine",    s:gui04, s:gui02, s:cterm04, s:cterm02, "none", "")
 call <sid>hi("StatusLineNC",  s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
-call <sid>hi("VertSplit",     s:gui02, s:gui02, s:cterm02, s:cterm02, "none", "")
+call <sid>hi("VertSplit",     s:gui02, s:gui01, s:cterm02, s:cterm01, "none", "")
 call <sid>hi("ColorColumn",   "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorColumn",  "", s:gui01, "", s:cterm01, "none", "")
 call <sid>hi("CursorLine",    "", s:gui01, "", s:cterm01, "none", "")
@@ -406,8 +406,8 @@ call <sid>hi("StartifySpecial",  s:gui03, "", s:cterm03, "", "", "")
 call <sid>hi("javaOperator",     s:gui0D, "", s:cterm0D, "", "", "")
 
 " Ale
-call <sid>hi("ALEErrorSign",     			s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
-call <sid>hi("ALEWarningSign",   			s:gui0A, s:gui01, s:cterm0A, s:cterm01, "", "")
+call <sid>hi("ALEErrorSign",     			s:gui08, "none", s:cterm08, "none", "", "")
+call <sid>hi("ALEWarningSign",   			s:gui0A, "none", s:cterm0A, "none", "", "")
 call <sid>hi("ALEVirtualTextError",		s:gui08, "", s:cterm08, "", "italic", "")
 call <sid>hi("ALEVirtualTextStyleError", s:gui08, "", s:cterm08, "", "italic", "")
 call <sid>hi("ALEVirtualTextWarning",	s:gui0A, "", s:cterm0A, "", "italic", "")
@@ -420,10 +420,10 @@ call <sid>hi("CocWarningHighlight", s:gui0A, "", s:cterm0A, "", "undercurl", "")
 call <sid>hi("CocInfoHighlight", s:gui0D, "", s:cterm0D, "", "undercurl", "")
 call <sid>hi("CocHintHighlight", s:gui0D, "", s:cterm0D, "", "undercurl", "")
 
-call <sid>hi("CocErrorSign", s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
-call <sid>hi("CocWarningSign", s:gui0A, s:gui01, s:cterm0A, s:cterm01, "", "")
-call <sid>hi("CocInfoSign", s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
-call <sid>hi("CocHintSign", s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
+call <sid>hi("CocErrorSign", s:gui08, "none", s:cterm08, "none", "", "")
+call <sid>hi("CocWarningSign", s:gui0A, "none", s:cterm0A, "none", "", "")
+call <sid>hi("CocInfoSign", s:gui0D, "none", s:cterm0D, "none", "", "")
+call <sid>hi("CocHintSign", s:gui0D, "none", s:cterm0D, "none", "", "")
 
 call <sid>hi("CocErrorVirtualText",		s:gui08, "", s:cterm08, "", "italic", "")
 call <sid>hi("CocWarningVirtualText",	s:gui0A, "", s:cterm0A, "", "italic", "")
@@ -432,10 +432,10 @@ call <sid>hi("CocHintVirtualText", 		s:gui0D, "", s:cterm0D, "", "italic", "")
 
 call <sid>hi("HighlightedyankRegion", s:gui00, s:gui0A, s:cterm00, s:cterm0A, "", "")
 
-call <sid>hi("DiffAdd",     s:gui0B, s:gui01, s:cterm0B, s:cterm01, "", "")
-call <sid>hi("DiffChange",  s:gui0D, s:gui01, s:cterm0D, s:cterm01, "", "")
-call <sid>hi("DiffDelete",  s:gui08, s:gui01, s:cterm08, s:cterm01, "", "")
-call <sid>hi("DiffChangeDelete",  s:gui0E, s:gui01, s:cterm0E, s:cterm01, "", "")
+call <sid>hi("DiffAdd",     s:gui0B, "none", s:cterm0B, "none", "", "")
+call <sid>hi("DiffChange",  s:gui0D, "none", s:cterm0D, "none", "", "")
+call <sid>hi("DiffDelete",  s:gui08, "none", s:cterm08, "none", "", "")
+call <sid>hi("DiffChangeDelete",  s:gui0E, "none", s:cterm0E, "none", "", "")
 
 " Remove functions
 delf <sid>hi
