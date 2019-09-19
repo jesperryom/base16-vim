@@ -222,7 +222,7 @@ call <sid>hi("PMenu",         s:gui05, s:gui01, s:cterm05, s:cterm01, "none", ""
 call <sid>hi("PMenuSel",      s:gui01, s:gui05, s:cterm01, s:cterm05, "", "")
 call <sid>hi("TabLine",       s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
 call <sid>hi("TabLineFill",   s:gui03, s:gui01, s:cterm03, s:cterm01, "none", "")
-call <sid>hi("TabLineSel",    s:gui0B, s:gui01, s:cterm0B, s:cterm01, "none", "")
+call <sid>hi("TabLineSel",    s:gui05, "none", s:cterm05, "none", "bold", "")
 
 " Standard syntax highlighting
 call <sid>hi("Boolean",      s:gui09, "", s:cterm09, "", "", "")
