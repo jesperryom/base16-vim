@@ -430,7 +430,7 @@ call <sid>hi("CocInfoVirtualText",         s:gui0D, "",      s:cterm0D, "",     
 call <sid>hi("CocHintVirtualText",         s:gui0D, "",      s:cterm0D, "",        "italic",        "")
 call <sid>hi("CocHintVirtualText",         s:gui0D, "",      s:cterm0D, "",        "italic",        "")
 
-call <sid>hi("CocHighlightText",           "",      s:gui02, "",        s:cterm02, "underline",     "")
+call <sid>hi("CocHighlightText",           "",      "",      "",        "",        "underline",     "")
 
 call <sid>hi("DiffAdd",                    s:gui0B, "none",  s:cterm0B, "none",    "",              "")
 call <sid>hi("DiffChange",                 s:gui0D, "none",  s:cterm0D, "none",    "",              "")
