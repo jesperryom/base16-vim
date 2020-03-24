@@ -300,10 +300,10 @@ call <sid>hi("gitcommitDiscardedFile",     s:gui08, "",      s:cterm08, "",     
 call <sid>hi("gitcommitSelectedFile",      s:gui0B, "",      s:cterm0B, "",        "bold",          "")
 
 " GitGutter highlighting
-call <sid>hi("GitGutterAdd",               s:gui0B, s:gui01, s:cterm0B, s:cterm01, "",              "")
-call <sid>hi("GitGutterChange",            s:gui0D, s:gui01, s:cterm0D, s:cterm01, "",              "")
-call <sid>hi("GitGutterDelete",            s:gui08, s:gui01, s:cterm08, s:cterm01, "",              "")
-call <sid>hi("GitGutterChangeDelete",      s:gui0E, s:gui01, s:cterm0E, s:cterm01, "",              "")
+call <sid>hi("GitGutterAdd",               s:gui0B, "none",  s:cterm0B, "none",    "",              "")
+call <sid>hi("GitGutterChange",            s:gui0D, "none",  s:cterm0D, "none",    "",              "")
+call <sid>hi("GitGutterDelete",            s:gui08, "none",  s:cterm08, "none",    "",              "")
+call <sid>hi("GitGutterChangeDelete",      s:gui0E, "none",  s:cterm0E, "none",    "",              "")
 
 " HTML highlighting
 call <sid>hi("htmlBold",                   s:gui0A, "",      s:cterm0A, "",        "",              "")
@@ -348,10 +348,6 @@ call <sid>hi("markdownError",              s:gui05, s:gui00, s:cterm05, s:cterm0
 call <sid>hi("markdownCodeBlock",          s:gui0B, "",      s:cterm0B, "",        "",              "")
 call <sid>hi("markdownHeadingDelimiter",   s:gui0D, "",      s:cterm0D, "",        "",              "")
 
-" NERDTree highlighting
-call <sid>hi("NERDTreeDirSlash",           s:gui0D, "",      s:cterm0D, "",        "",              "")
-call <sid>hi("NERDTreeExecFile",           s:gui05, "",      s:cterm05, "",        "",              "")
-
 " PHP highlighting
 call <sid>hi("phpMemberSelector",          s:gui05, "",      s:cterm05, "",        "",              "")
 call <sid>hi("phpComparison",              s:gui05, "",      s:cterm05, "",        "",              "")
@@ -390,18 +386,6 @@ call <sid>hi("SpellLocal",                 "",      "",      "",        "",     
 call <sid>hi("SpellCap",                   "",      "",      "",        "",        "undercurl",     s:gui0D)
 call <sid>hi("SpellRare",                  "",      "",      "",        "",        "undercurl",     s:gui0E)
 
-" Startify highlighting
-call <sid>hi("StartifyBracket",            s:gui03, "",      s:cterm03, "",        "",              "")
-call <sid>hi("StartifyFile",               s:gui07, "",      s:cterm07, "",        "",              "")
-call <sid>hi("StartifyFooter",             s:gui03, "",      s:cterm03, "",        "",              "")
-call <sid>hi("StartifyHeader",             s:gui0B, "",      s:cterm0B, "",        "",              "")
-call <sid>hi("StartifyNumber",             s:gui09, "",      s:cterm09, "",        "",              "")
-call <sid>hi("StartifyPath",               s:gui03, "",      s:cterm03, "",        "",              "")
-call <sid>hi("StartifySection",            s:gui0E, "",      s:cterm0E, "",        "",              "")
-call <sid>hi("StartifySelect",             s:gui0C, "",      s:cterm0C, "",        "",              "")
-call <sid>hi("StartifySlash",              s:gui03, "",      s:cterm03, "",        "",              "")
-call <sid>hi("StartifySpecial",            s:gui03, "",      s:cterm03, "",        "",              "")
-
 " Java highlighting
 call <sid>hi("javaOperator",               s:gui0D, "",      s:cterm0D, "",        "",              "")
 
@@ -434,10 +418,10 @@ call <sid>hi("CocHighlightText",           "",      "",      "",        "",     
 
 call <sid>hi("HighlightedyankRegion",      s:gui00, s:gui0A, s:cterm00, s:cterm0A, "",              "")
 
-call <sid>hi("DiffAdd",                    s:gui0B, "none",      s:cterm0B, "none",        "",              "")
-call <sid>hi("DiffChange",                 s:gui0D, "none",      s:cterm0D, "none",        "",              "")
-call <sid>hi("DiffDelete",                 s:gui08, "none",      s:cterm08, "none",        "",              "")
-call <sid>hi("DiffChangeDelete",           s:gui0E, "none",      s:cterm0E, "none",        "",              "")
+call <sid>hi("DiffAdd",                    s:gui0B, "none",  s:cterm0B, "none",    "",              "")
+call <sid>hi("DiffChange",                 s:gui0D, "none",  s:cterm0D, "none",    "",              "")
+call <sid>hi("DiffDelete",                 s:gui08, "none",  s:cterm08, "none",    "",              "")
+call <sid>hi("DiffChangeDelete",           s:gui0E, "none",  s:cterm0E, "none",    "",              "")
 
 " Remove functions
 delf <sid>hi
