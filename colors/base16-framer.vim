@@ -429,6 +429,9 @@ delf <sid>hi
 " JSX tag colors
 hi link xmlEndTag xmlTag
 
+let g:ale_sign_error = '█'
+let g:ale_sign_warning = '█'
+
 " Fzf
 let g:fzf_colors =  {'fg':['fg','Normal'],'bg':['bg','Normal'],
   \ 'hl':['fg','Comment'],'fg+':['fg','CursorLine','CursorColumn','Normal'],
