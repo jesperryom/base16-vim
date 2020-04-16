@@ -14,6 +14,15 @@ if !has("gui_running")
   endif
 endif
 
+" Undercurl for term
+let &t_Cs = "\e[4:3m"
+let &t_Ce = "\e[4:0m"
+
+" Cursor modes for term
+let &t_SI.="\e[5 q" "SI = INSERT mode
+let &t_SR.="\e[4 q" "SR = REPLACE mode
+let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
+
 " GUI color definitions
 let s:gui00        = "feffff"
 let g:base16_gui00 = "feffff"
